@@ -4,10 +4,65 @@
     box-sizing: border-box; 
 }
 
-header {
-    background-image: url(bilder/beige.jpg);
-    height: 15vw;
-    width: auto;
+
+
+
+html {
+    font-size: 16px;
 }
 
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none; 
+}
+
+.navbar {
+    padding: 1.25rem;
+    background: whitesmoke;
+    height: 2.5rem;;
+}
+
+.navbar--menu {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.navbar--menu > a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+@media (max-width: 500px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar--menu {
+        display: none;
+    }
+    #toggle:checked + .navbar--menu {
+        display: block;
+        background-color: whitesmoke;
+        padding-bottom: 5px;
+    }
+    #toggle:checked + .navbar-menu::before {
+        content: "☝🏼 🤞🏼 💅🏼 ";
+        display: block;
+        background-color: whitesmoke;
+        padding-bottom: 5px;
+    }
+
+    .navbar--menu > a {
+        display: block;
+        color: wheat;
+        margin: 20px;
+        border-bottom: 1.5px solid black; 
+    }
+
+    
+}
 
