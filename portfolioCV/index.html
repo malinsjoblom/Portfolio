@@ -7,6 +7,45 @@
     <title>Malin Sjöblom Portfolio/CV</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+
+        .container {
+            display: flex;
+
+           
+        }
+
+         /* /background-color: brown;
+            align-items: baseline;*/
+
+
+        .flexitems {
+            background-color: indigo;
+            margin: 20px;
+            font-size: 40px;
+
+        }
+
+        .items1 {
+            height: 400px;
+
+        }
+
+        .items2 {
+            flex: 0 1 800px;
+        }
+
+        
+    /* flex: flex-grow, flex-shrink, flex-basis, kan förkortas till flex: 0, 0, 100px;*/
+
+        .items3 {
+        
+        }
+
+
+
+    </style>
+
 
 </head>
 
@@ -60,7 +99,28 @@
 
     </main>
 
+    <div class="container">
+        <div class="flexitems items1">a</div>
+        <div class="flexitems items2">b</div>
+        <div class="flexitems items3">c</div>
+        <div class="flexitems">d</div>
+    </div>
+
+
+    *Mobile first utveckling:
+       *mindre bildstorlek
+       *design anpassning till små devices 360px */
+
+
+
+
+
+
+
 
 </body>
+
+
+
 
 </html>
